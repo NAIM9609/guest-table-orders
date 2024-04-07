@@ -3,9 +3,10 @@ import AddToCart from './AddToCart'
 
 const MenuListItem = () => {
   return (
-    <div>MenuListItem
+    <>
+      MenuListItem
         <AddToCart />
-    </div>
+    </>
   )
 }
 

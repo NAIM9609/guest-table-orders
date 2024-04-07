@@ -7,7 +7,9 @@ function AddItemToCart() {
 
 const AddToCart = () => {
   return (
-    <button className='btn btn-primary' onClick={AddItemToCart}>AddToCart</button>
+    <>
+      <button className='btn btn-primary' onClick={AddItemToCart}>AddToCart</button>
+    </>
   )
 }
 
