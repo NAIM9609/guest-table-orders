@@ -1,5 +1,8 @@
 import React from 'react'
 import MenuListItem from '../components/MenuListItem'
+import NavBar from './../components/NavBar';
+import MenuTab from './../components/MenuTab';
+import ModalAddToCart from '../components/ModalAddToCart';
 
 const Menu = async () => {
 
@@ -9,8 +12,11 @@ const Menu = async () => {
 
   return (
     <>
-        <h1>Menu</h1>
-        <MenuListItem />
+      <div className='container mx-auto px-4 size-full content-center'>
+        <div className='container flex flex-col justify-center'>
+          <MenuTab />
+        </div>
+      </div>
     </>
   )
 }
