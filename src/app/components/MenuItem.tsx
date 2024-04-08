@@ -1,7 +1,16 @@
 import React from "react";
 
 const MenuItem = () => {
-    const OpenModal = () => document.getElementById("my_modal_2").showModal();
+    const OpenModal = () =>
+      {
+        if(document) {
+          const modalAddToCart = document.getElementById("my_modal_2");
+
+          if(modalAddToCart instanceof HTMLDialogElement)
+            modalAddToCart.showModal();
+        }
+      };
+
   return (
     <>
       <div className="card w-96 bg-base-100 shadow-xl shadow-2xl">
