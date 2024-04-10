@@ -1,6 +1,11 @@
 import React from "react";
 
-const MenuItem = () => {
+export interface ChildComponentProps {
+  title: string;
+}
+
+const MenuItem : React.FC<ChildComponentProps> = ({ title }) => {
+  
     const OpenModal = () =>
       {
         if(document) {
@@ -13,9 +18,9 @@ const MenuItem = () => {
 
   return (
     <>
-      <div className="card w-96 bg-base-100 shadow-xl shadow-2xl">
+      <div className="card card-bordered w-96 shadow-primary-content shadow-2xl">
         <div className="card-body">
-          <h2 className="card-title">Card title!</h2>
+          <h2 className="card-title">{title}</h2>
           <p>If a dog chews shoes whose shoes does he choose?</p>
           <div className="card-actions justify-end">
             <button
