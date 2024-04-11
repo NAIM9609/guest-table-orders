@@ -9,20 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@auth/pg-adapter": "^0.7.1",
     "next": "14.1.4",
-    "next-auth": "^4.24.7",
-    "pg": "^8.11.3",
+    "primereact": "^10.6.3",
     "react": "^18",
-    "react-dom": "^18",
-    "theme-change": "^2.5.0"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
-    "daisyui": "^4.10.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.4",
     "postcss": "^8",

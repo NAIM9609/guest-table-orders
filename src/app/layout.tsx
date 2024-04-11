@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Drawer from "./components/Drawer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,12 +14,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-  const classesName = inter.className + " size-full"
+  const classesName = inter.className + " size-full";
   return (
-    <html data-theme="dark" lang="en" className="size-full">
+    <html lang="en" className="size-full">
       <body suppressHydrationWarning={true} className={classesName}>
-        {/* <Drawer /> */}
         {children}
       </body>
     </html>

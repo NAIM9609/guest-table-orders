@@ -1,8 +1,5 @@
 import React from 'react'
-import MenuListItem from '../components/MenuListItem'
-import NavBar from './../components/NavBar';
-import MenuTab from './../components/MenuTab';
-import ModalAddToCart from '../components/ModalAddToCart';
+import MenuTab from '../components/MenuTab'
 
 const Menu = async () => {
 
