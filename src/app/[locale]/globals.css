@@ -1,6 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* IMPORTANT: In "styled" mode you must add the PrimeReact Theme here. Do NOT include in "unstyled" mode */
+@import '/themes/**/*.css';
+@import 'primeicons/primeicons.css';
+@import 'primeflex/primeflex.css';
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -24,8 +26,20 @@ body {
   min-height: 100vh;
 }
 
+
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
+@layer tailwind-base, primereact, tailwind-utilities;
