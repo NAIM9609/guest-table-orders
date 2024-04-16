@@ -6,9 +6,11 @@ export default createMiddleware({
 
   // Used when no locale matches
   defaultLocale: "it",
+  localeDetection: true,
+  localePrefix: "always"
 });
 
 export const config = {
   // Match only internationalized pathnames
-  matcher: ["/", "/(en|it)/:path*"],
+  matcher: ["/", "/(en|it)/:path*", "/((?!api|_next|.*\\..*).*)"],
 };

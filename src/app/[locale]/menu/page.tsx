@@ -1,5 +1,4 @@
-import React from 'react'
-import MenuTab from '../components/MenuTab'
+import TabContainer from './../../components/TabContainer';
 
 const Menu = async () => {
 
@@ -7,15 +6,13 @@ const Menu = async () => {
     // const res = await fetch("");
     // const menuList = await res.json();
 
-  return (
-    <>
-      <div className='container mx-auto px-4 size-full content-center'>
-        <div className='container flex flex-col justify-center'>
-          <MenuTab />
-        </div>
-      </div>
-    </>
-  )
+    return (
+        <>
+            <div className="surface-300 col-12">
+                <TabContainer />
+            </div>
+        </>
+    )
 }
 
 export default Menu
