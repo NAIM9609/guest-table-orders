@@ -158,5 +158,8 @@
     "zoomImage": "Zoom Immagine",
     "zoomIn": "Ingrandisci",
     "zoomOut": "Riduci"
-  }
+  },
+  "orders":"Ordini",
+  "cart":"Carrello",
+  "menu":"Menu"
 }

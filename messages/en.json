@@ -158,5 +158,8 @@
     "zoomImage": "Zoom Image",
     "zoomIn": "Zoom In",
     "zoomOut": "Zoom Out"
-  }
+  },
+  "orders":"Orders",
+  "cart":"Cart",
+  "menu":"Menu"
 }

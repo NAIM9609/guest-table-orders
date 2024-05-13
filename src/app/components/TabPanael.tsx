@@ -20,9 +20,9 @@ export interface CardDetail {
 function TabPanael({ tabPanel }: Readonly<{ tabPanel: ITabPanel; }>) {
     return (
         <>
-            <TabPanel key={tabPanel.id + "_tabPanel"} header={tabPanel.header} leftIcon={"mr-2 pi " + tabPanel.icon}>
+            <TabPanel header={tabPanel.header} leftIcon={"mr-2 pi " + tabPanel.icon}> {/*key={tabPanel.id + "_tabPanel"} */}
 
-                <ContainerScrollPanel key={tabPanel.header + "_scrollPanel"} content={tabPanel.content} />
+                <ContainerScrollPanel content={tabPanel.content} /> {/* key={tabPanel.header + "_scrollPanel"}  */}
 
             </TabPanel>
         </>
